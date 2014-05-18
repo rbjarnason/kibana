@@ -9,11 +9,11 @@
   <fieldset>
     <select class="input-small" ng-model="dashboard.current.services.query.list[id].type" ng-change="typeChange(dashboard.current.services.query.list[id])">
       <option ng-repeat="type in queryTypes">{{type}}</option>
-    </select> &nbsp<a href="" class="small" ng-click="queryHelp(dashboard.current.services.query.list[id].type)"> About the {{dashboard.current.services.query.list[id].type}} query</a>
+    </select> &nbsp<a href="" class="small" ng-click="queryHelp(dashboard.current.services.query.list[id].type)"> {{ 'About the' | translate }} {{dashboard.current.services.query.list[id].type}} {{ 'query' | translate }}</a>
 
     <hr class="small">
 
-    <label class="small">Legend value</label>
+    <label class="small">{{ 'Legend value' | translate }}</label>
     <input type="text" ng-model="dashboard.current.services.query.list[id].alias" placeholder="Alias...">
   </fieldset>
 
